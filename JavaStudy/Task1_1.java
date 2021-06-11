@@ -18,10 +18,10 @@ public class Task1_1 {
          System.out.println(hogeInt);
 
           // ⑦下記の処理について、何をしているのかコメントを記入してください
-        // [hogeStringを表示させるよう指示している。]
+        // [hogeStringの値を表示させるよう指示している。]
         System.out.println(hogeString);
 
-        System.out.println(0.2);
+        System.out.println(hogeDouble);
 
 
     }
