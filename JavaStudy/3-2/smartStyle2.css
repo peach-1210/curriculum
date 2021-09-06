@@ -41,18 +41,22 @@
         width: 150px;
     }
 
-    .right-center{
+    .center{
         width: 150px;
+    }
+
+    .right-center{
+        width: 100%;
         float:none;
     }
 
     .right{
-        width: 150px;
+        width: 100%;
         float:none;
     }
 
     .subFooter{
-        width: 150px;
+        width: 100%;
         float:none;
     }
 
