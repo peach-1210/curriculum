@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class ExException {
 
 	   // 定数（条件）
-    private static final int CONST_EXCEPTION_TRIGER_NULL = 1;
+	private static final int CONST_EXCEPTION_TRIGER_NULL = 1;
     private static final int CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS = 2;
     private static final int CONST_EXCEPTION_TRIGER_CAST = 3;
 
@@ -62,7 +62,7 @@ public class ExException {
                     // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
                     // 問①は最下部にもあります。
                     // ルール: ここへ作成したメソッドを呼び出す
-                    	 nlp(CONST_EXCEPTION_TRIGER_NULL);
+                    	 nlp(1);
                     	
                     break;
                     case CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS:
@@ -70,14 +70,10 @@ public class ExException {
                     // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
                     // ここへ記述
                     	
-                    	int[] array = new int[2];
-					
-                    	System.out.println(array[CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS]);
+                    	int[] array = {3,2,5};
                     	
+                    	System.out.println(array[5]);
                     	
-                    	
-                    	
-					
                     break;
                     
                     case CONST_EXCEPTION_TRIGER_CAST:
@@ -117,15 +113,13 @@ public class ExException {
     // ここへ記述
     
 	private static void nlp (int nl) throws  NullPointerException{
-		
-	
-    	
-		while(nl == 1) { 
+		if(nl == 1) { 
 			throw new NullPointerException(CONST_MSG_NULLPO);
+				
+			}
 			
 		}
 		
-	}
 	
 
     /**
